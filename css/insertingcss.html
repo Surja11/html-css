@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Surja Shrestha">
+  <title>inserting css</title>
+  <link rel="stylesheet" href="externalcss.css">
+  <style>
+    #internal{
+      color: midnightblue;
+      background-color: rgb(185, 169, 147);
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+  <h2>Internal CSS Applied</h2>
+  <p id="internal">
+    This sentence is styled using internal CSS.
+  </p>
+  <br><br><hr>
+  <h2>Inline CSS Applied</h2>
+  <p style="color:bisque;background-color:steelblue; text-align: center;">This sentence is styled using inline CSS. Inline CSS has the greatest priority among all other ways to style the content.</p>
+  <br><br><hr>
+  <h2>External CSS Applied</h2>
+  <p id="external">
+    This sentence is styled using external CSS.
+  </p>
+</body>
+</html>

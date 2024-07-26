@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transitions and animations</title>
+  <style>
+    div img{
+      width: 200px;
+      height: 200px;
+      position: relative;
+      top: 90px;
+      left: 10%;
+      border-radius: 50%;
+      transition: 800ms, 500ms,transform, ease-in;
+    }
+    div img:hover{
+      transform: rotate(180deg) scale(1.5);
+    }
+    .box-1{
+      width: 300px;
+      height: 300px;
+      background-color:hsl(245, 65%, 22%);
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      
+    }
+    .box-2{
+      height: 30%;
+      width: 30%;
+      background-color: rgb(223,144,144);
+      border-radius: 50%;
+      animation: bounce 1s ease-in-out forwards infinite alternate;
+    }
+    h2{
+      position: absolute;
+      top: 1%;
+      left: 50%;
+    }
+    .box-1:hover .box-2{
+      animation-play-state: paused;
+
+    }
+    @keyframes bounce{
+      0%{
+        transform: translateX(0);
+      };
+      33%{
+        transform: translateY(230%) translateX(50%);
+      }
+      66%{
+        transform: translateX(100%);
+
+      }
+      100%{
+        transform: translateX(230%) translateY(100%);
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Transition</h3>
+  <div class="image">
+    <img src="./pooh.jpg" alt="pooh">
+  </div>
+  <h2>Animation</h2>
+  <div class="box-1">
+    
+    <div class="box-2"></div>
+  </div>
+ 
+</body>
+</html>

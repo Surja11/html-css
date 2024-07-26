@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Surja Shrestha">
+  <title>linear gradient</title>
+</head>
+<body>
+  <canvas id="myCanvas" width="400" height="250"
+style="border:1px solid #d3d3d3;">
+</canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+// Create gradient
+var grd = ctx.createRadialGradient(125,110,10,190,120,200);
+grd.addColorStop(0,"purple");
+grd.addColorStop(1,"white");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(0,0,400,300);
+</script>
+</body>
+</html>

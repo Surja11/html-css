@@ -1,0 +1,35 @@
+
+.back-properties{
+  height: 300px;
+  width: 400px;
+  display: inline-block;
+  margin-top: 10px;
+  color:rgb(99, 84, 25);
+background-color:  plum;
+background-image: url(../merlin_129467771_8d79a240-191d-465d-a50d-30c549af3eb1-articleLarge.webp);
+background-size:280px;
+background-repeat: no-repeat;
+background-position: bottom right;
+background-attachment: scroll;
+border: 5px solid #333;
+
+
+}
+.text-properties{
+  background-color: lightskyblue;
+  color: white;
+  height: 310px;
+  width: 400px;
+  direction: rtl;
+  letter-spacing: 3px;
+  text-decoration: double;
+  text-transform: uppercase;
+  text-indent: 10%;
+  word-spacing: 10px;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  font-size: 130%;
+  font-variant: small-caps;
+  border: 5px dotted rebeccapurple;
+}

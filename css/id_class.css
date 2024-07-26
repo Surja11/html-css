@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+  ;
+}
+
+#changecolor{
+  color: mediumvioletred;
+}
+#backgroundcolor{
+  background-color: lightseagreen;
+}
+.color{
+  color: purple;
+  font-weight: 800;
+  
+}
+h2{
+  border: 3px dashed red;
+  text-align: center;
+}

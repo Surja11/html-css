@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box model and box shadow</title>
+  <style>
+    .box-model{
+      border: 10px solid black;
+      width: 200px;
+      padding: 100px;
+      margin: 20px;
+      display: inline-block;
+    }
+    .inset-box-shadow{
+      display: inline-block;
+      box-shadow: inset 5px 5px  5px lightsalmon;
+    }
+    .box-shadow{
+      box-shadow: 5px 5px 5px lightgreen,-5px -5px 5px rgb(108, 138, 168);
+    }
+  </style>
+</head>
+<body>
+  <h2>Box model</h2>
+  <div class="box-model">The box model consists of margin, border, padding and the actual content </div>
+  <div class="inset-box-shadow">
+    this is an inset box shadow
+  </div>
+  <br><br>
+  <div class="box-shadow"> A div element with a shadow. The first value is the horizontal offset and the second value is the
+    vertical offset.</div>
+</body>
+</html>
